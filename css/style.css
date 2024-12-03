@@ -95,7 +95,7 @@ body .clock{
    padding: 3rem;
 } 
 .clock {
-  font-size: 2rem;
+  font-size: 4rem;
   text-align: center;
   margin:  auto;
   color: yellow;
@@ -111,3 +111,8 @@ body .clock{
 
 }
 
+@media screen and (max-width:646px){ 
+  .clock {
+    font-size: 1rem;
+  }
+}
