@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif, 'Trebuchet MS';
+}
+
+body{
+    background: #eeedec2d;
+    letter-spacing: 0em;
+    font-size: 200%;
+ }
+
+ form{
+    margin-bottom: 70px;
+ }
+
+ button{
+  background: none;
+  color: rgb(252, 223, 223);
+  border-radius: 10px;
+  padding: 3px;
+  cursor: pointer;
+  box-shadow: 7px 3px 24px 1px rgba(255, 255, 255, 0.4);
+
+ }
+
+ button:hover{
+  transform:translateX(9px);
+  transition: 0.7s ease-in-out;
+
+ }
+
+ 
+ .background{
+   background-image:linear-gradient(hsla(0, 15%, 13%, 0.576)
+   ,rgba(9, 9, 7, 0.929)), url(/img/white\ background\ design.webp);
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items:center;
+   color: white;
+    border-radius: 20px;
+    padding: 60px;
+ }
+
+ .search{
+   margin-bottom: 70px;
+ }
+
+
+ input{
+   background-color:rgba(33, 33, 31, 0.204) ;
+   border: none;
+   color: white;
+   border-radius: 15px;
+   height:30px;
+   width: 80%;
+   outline: none;
+   font-size: 20px;
+ }
+
+
+ .description{
+  text-transform: capitalize;
+ }
+ .flex{
+  display: flex;
+  align-items: center;
+ }
+
+ .weatherDiv.loading{
+  visibility: hidden;    /*or maybe try display: none;*/
+  max-height: 20px;
+  position: relative;
+ }
+
+ /* input[type=text]:focus {
+   background-color:   rgb(0, 68, 255);
+ } */
+
+ .weatherDiv.loading:after{
+ visibility: visible;
+ content: "Loading...";
+ position: absolute;
+ top: 0px;
+
+}
+
+
+
+/* styling for the Digital clock */
+body .clock{
+  background: #333;
+   padding: 3rem;
+} 
+.clock {
+  font-size: 4rem;
+  text-align: center;
+  margin:  auto;
+  color: yellow;
+  font-family: arial;
+  border-radius: 20px;
+
+}
+
+.clock span{
+  padding: 20px;
+  background: #444;
+  border-radius: 20px;
+
+}
+
